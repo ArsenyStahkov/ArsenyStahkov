@@ -37,7 +37,7 @@ String::String(const char* str)
     _length = strlen(str);
     _str = new char[_length + 1];
 
-    for (unsigned long i = 0; i < _length; i++)
+    for (unsigned int i = 0; i < _length; i++)
         _str[i] = str[i];
     _str[_length] = '\0';
 }
@@ -47,7 +47,7 @@ String::String(const String& second)
     _length = second.Length();
     _str = new char[_length + 1];
 
-    for (unsigned long i = 0; i < _length; i++)
+    for (unsigned int i = 0; i < _length; i++)
         _str[i] = second._str[i];
     _str[_length] = '\0';
 }
@@ -64,7 +64,7 @@ String::~String()
     delete[] _str;
 }
 
-unsigned long String::Length() const
+unsigned int String::Length() const
 {
     return _length;
 }
@@ -74,7 +74,7 @@ void String::Print() const
     printf(_str);
 }
 
-char& String::operator [](const unsigned long index)
+char& String::operator [](const unsigned int index)
 {
     return _str[index];
 }
@@ -84,7 +84,7 @@ bool String::operator ==(const String& second)
     if (_length != second._length)
         return false;
 
-    for (unsigned long i = 0; i < _length; i++)
+    for (unsigned int i = 0; i < _length; i++)
         if (_str[i] != second._str[i])
             return false;
 
@@ -103,7 +103,7 @@ String& String::operator =(const String& second)
     _length = second.Length();
     _str = new char[_length + 1];
 
-    for (unsigned long i = 0; i < _length; i++)
+    for (unsigned int i = 0; i < _length; i++)
         _str[i] = second._str[i];
     _str[_length] = '\0';
 
@@ -114,13 +114,13 @@ String& String::operator +=(const String& second)
 {
     char* resultStr = new char[_length + second.Length() + 1];
 
-    unsigned long i = 0;
+    unsigned int i = 0;
     for (; i < _length; i++)
         resultStr[i] = _str[i];
 
-    unsigned long secondLength = second.Length();
+    unsigned int secondLength = second.Length();
 
-    for (unsigned long j = 0; j < secondLength; j++, i++)
+    for (unsigned int j = 0; j < secondLength; j++, i++)
         resultStr[i] = second._str[j];
 
     _length += secondLength;
@@ -135,15 +135,15 @@ String operator +(const String& first, const String& second)
 {
     String newStr;
 
-    unsigned long firstLength = first.Length();
-    unsigned long secondLength = second.Length();
+    unsigned int firstLength = first.Length();
+    unsigned int secondLength = second.Length();
     char* resultStr = new char[firstLength + secondLength + 1];
 
-    unsigned long i = 0;
+    unsigned int i = 0;
     for (; i < firstLength; i++)
         resultStr[i] = first._str[i];
 
-    for (unsigned long j = 0; j < secondLength; j++, i++)
+    for (unsigned int j = 0; j < secondLength; j++, i++)
         resultStr[i] = second._str[j];
 
     newStr._length = firstLength + secondLength;

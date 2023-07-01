@@ -7,7 +7,7 @@ using namespace std;
 
 class String
 {
-    unsigned long _length;
+    unsigned int _length;
     char* _str;
 public:
     String();
@@ -15,9 +15,9 @@ public:
     String(const String& second);
     String(String&& second);
     ~String();
-    unsigned long Length() const;
+    unsigned int Length() const;
     void Print() const;
-    char& operator [](const unsigned long index);
+    char& operator [](const unsigned int index);
     bool operator ==(const String& second);
     bool operator !=(const String& second);
     String& operator =(const String& second);
