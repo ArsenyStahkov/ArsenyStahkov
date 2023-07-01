@@ -18,8 +18,8 @@ int main()
 
 int WorkWithServer()
 {
-	const char IP_ADDRESS[] = "192.168.0.100";
-	const int SERVER_PORT = 50719;
+	const char IP_ADDRESS[] = "172.20.10.4";
+	const int SERVER_PORT = 52590;
 
 	// Check IP
 	in_addr ipToNum;

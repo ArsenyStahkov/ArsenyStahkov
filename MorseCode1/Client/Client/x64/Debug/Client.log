@@ -1,4 +1,4 @@
 ﻿  Client.cpp
-D:\Programming\C++ Visual Studio\MorseCode1\Client\Client\Client.cpp(83,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\Programming\C++ Visual Studio\MorseCode1\Client\Client\Client.cpp(169,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Client.vcxproj -> D:\Programming\C++ Visual Studio\MorseCode1\Client\x64\Debug\Client.exe
+D:\GitHub\MorseCode1\Client\Client\Client.cpp(83,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub\MorseCode1\Client\Client\Client.cpp(169,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Client.vcxproj -> D:\GitHub\MorseCode1\Client\x64\Debug\Client.exe

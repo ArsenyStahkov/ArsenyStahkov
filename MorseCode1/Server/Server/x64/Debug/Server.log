@@ -1,5 +1,5 @@
 ﻿  Server.cpp
-D:\Programming\C++ Visual Studio\MorseCode1\Server\Server\Server.cpp(128,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\Programming\C++ Visual Studio\MorseCode1\Server\Server\Server.cpp(142,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\Programming\C++ Visual Studio\MorseCode1\Server\Server\Server.cpp(155,70): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  Server.vcxproj -> D:\Programming\C++ Visual Studio\MorseCode1\Server\x64\Debug\Server.exe
+D:\GitHub\MorseCode1\Server\Server\Server.cpp(128,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub\MorseCode1\Server\Server\Server.cpp(142,61): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub\MorseCode1\Server\Server\Server.cpp(155,70): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Server.vcxproj -> D:\GitHub\MorseCode1\Server\x64\Debug\Server.exe
